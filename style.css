@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+}
+body{
+    background: linear-gradient( to left, rgb(0, 0, 0), rgb(0, 255, 255));
+    
+}
+
+.wrapper{
+    border: 5px solid black;
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 0rem;
+    overflow: hidden;
+    background: black;
+    border-radius: 12px;
+}
+@keyframes scrollLeft{
+    to {
+        right: -1536px;
+    }
+}
+.item{
+    width: 1536px;
+    height: 100px;
+    background: url(Car2.png);
+    position: absolute;
+    right: 100%;
+    animation-name: scrollLeft;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -27s;
+}
+
+.item2 {
+    width: 1536px;
+    height: 100px;
+    background: url(Car2.png);
+    position: absolute;
+    right: 100%;
+    animation-name: scrollLeft;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -21s;
+    
+}
+.text{
+    align-items: center;
+    text-align: center;
+    margin-top: 17rem;
+    font-family: 'Agdasima';
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
